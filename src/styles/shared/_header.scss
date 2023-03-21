@@ -108,6 +108,10 @@ header {
 	font-size: 24px;
 	line-height: 26px;
 	color: $white;
+	transition: 0.2s ease-in-out;
+	@include hover {
+		color: $beige-light;
+	}
 	@include tablet-down {
 		font-size: 30px;
 	}
