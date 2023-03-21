@@ -8,27 +8,38 @@
 		<script type="module" src="./js/main.js" defer></script>
 	</head>
 	<body>
-		<header>
-
+		<header class="js-header">
+			<div class="wrap">
+				<div class="header__container">
+					<a href="javscript:;" class="header__logo">
+						<img class="header__img" src="assets/logo-white.png" alt="logo" />
+					</a>
+					<button class="header__menu js-menu">
+						<span class="header__icon"></span>
+						<span class="sr-only">Hamburger</span>
+					</button>
+					<nav class="nav js-nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<button class="nav__btn">O nama</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn">Proizvodi</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__btn">Kontakt</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</header>
 		<main>
-			<section class="banner">
-				<h1 class="aaa">Aaaaaaaaaa</h1>
-				<h2 class="bbb">Bbbbbbbbbbbb</h2>
-			</section>
-			<section class="video-section">
-				
-			</section>
-			<section class="about">
-
-			</section>
-			<section class="products">
-
-			</section>
+			<section class="banner has-cover" style="background-image: url(assets/banner.jpg)"></section>
+			<section class="video-section"></section>
+			<section class="about"></section>
+			<section class="products"></section>
 		</main>
-		<footer>
-
-		</footer>
-		
+		<footer></footer>
 	</body>
 </html>
