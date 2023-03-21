@@ -12,6 +12,8 @@
 @import 'shared/header';
 @import 'shared/footer';
 
+@import 'modules/banner';
+
 .button {
 	@include animation {
 		transition: $transition-primary transform;

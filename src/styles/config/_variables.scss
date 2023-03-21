@@ -2,9 +2,19 @@
 // variables
 // ========================================
 
-$default-font: 'Lato', sans-serif;
+$default-font: 'Poppins', sans-serif;
 
 $white: #ffffff;
 $black: #000000;
+$beige-light: #D6A369;
+$beige-dark:  #795C3C;
+
+$primary-dark: #2D2B2B;
+$primary-light: #FCF7F2;
+
+$gradient-dark-top: linear-gradient(180deg, #2D2B2B 40%, #BE8849 200%);
+$gradient-dark-bottom: linear-gradient(180deg, #BE8849 -110%, #2D2B2B 70%);
+$gradient-light-top: linear-gradient(180deg, #FFF8EF 30%, #BE8849 100%);
+$gradient-light-bottom: linear-gradient(180deg, #BE8849 0%, #FFF8EF 70%);
 
 $transition-primary: 300ms ease-in-out;
