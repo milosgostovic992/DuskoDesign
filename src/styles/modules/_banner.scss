@@ -1,4 +1,133 @@
 .banner {
-    min-height: 800px;
-    width: 100%;
+	min-height: 800px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 100px 0;
+	overflow: hidden;
+	@include phone {
+		min-height: auto;
+	}
+}
+.banner__container {
+	max-width: 47%;
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	min-height: 376px;
+	@include tablet-down {
+		max-width: 100%;
+	}
+}
+.banner__title {
+	font-weight: 300;
+	font-size: 55px;
+	line-height: 115%;
+	margin-bottom: 20px;
+	@include tablet {
+		font-size: 50px;
+		line-height: 53px;
+		max-width: 60%;
+	}
+	@include phone {
+		font-size: 32px;
+		line-height: 115%;
+		max-width: 80%;
+	}
+}
+.banner__subheading {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 34px;
+	max-width: 75%;
+	@include tablet {
+		max-width: 55%;
+	}
+	@include phone {
+		max-width: 100%;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+.banner__btn {
+	color: $white;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 8px 30px;
+	background-color: $beige-dark;
+	border-radius: 8px;
+}
+
+.banner__light-holder {
+	position: absolute;
+	left: 50%;
+	bottom: 75px;
+	transform: translateX(-15%);
+	width: 300px;
+	display: flex;
+	@include phone {
+		bottom: 35px;
+	}
+}
+.banner__switch {
+	width: 80px;
+	height: 80px;
+}
+.banner__img-light {
+	width: 100%;
+	height: 100%;
+}
+
+.banner__arrow {
+	display: block;
+	width: 45px;
+	height: 3px;
+	background-color: $primary-light;
+	transform: rotate(347deg) translate(95%, 25px);
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		left: -4px;
+		top: -3px;
+		width: 17px;
+		height: 3px;
+		background-color: $white;
+		transform: rotate(335deg);
+		@include phone {
+			width: 14px;
+			top: -2px;
+		}
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		left: -4px;
+		bottom: -3px;
+		width: 17px;
+		height: 3px;
+		background-color: $white;
+		transform: rotate(21deg);
+		@include phone {
+			width: 14px;
+		}
+	}
+	@include phone {
+		width: 35px;
+	}
+}
+
+.banner__click {
+	color: $white;
+	font-size: 20px;
+	display: block;
+	transform: rotate(347deg) translate(72%, -3px);
+	@include phone {
+		font-size: 15px;
+		transform: rotate(347deg) translate(72%, 3px);
+	}
 }

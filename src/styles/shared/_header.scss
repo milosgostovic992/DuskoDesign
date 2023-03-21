@@ -71,6 +71,7 @@ header {
 	height: 100%;
 }
 .nav {
+	z-index: 1;
 	@include tablet-down {
 		opacity: 0;
 		visibility: hidden;
@@ -105,8 +106,8 @@ header {
 	}
 }
 .nav__btn {
-	font-size: 24px;
-	line-height: 26px;
+	font-size: 16px;
+	line-height: 18px;
 	color: $white;
 	transition: 0.2s ease-in-out;
 	@include hover {
