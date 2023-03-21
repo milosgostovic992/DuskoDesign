@@ -80,6 +80,9 @@
 .banner__img-light {
 	width: 100%;
 	height: 100%;
+	@include animation {
+		animation: glow 2s infinite;
+	}
 }
 
 .banner__arrow {
@@ -118,6 +121,9 @@
 	}
 	@include phone {
 		width: 35px;
+	}
+	@include animation {
+		animation: pointingArrow 2s infinite;
 	}
 }
 
