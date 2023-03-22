@@ -88,6 +88,9 @@ header {
 	opacity: 1;
 	visibility: visible;
 	right: 0;
+	.nav__item {
+		margin-left: 0;
+	}
 }
 .nav__list {
 	display: flex;

@@ -60,6 +60,14 @@
 	padding: 8px 30px;
 	background-color: $beige-dark;
 	border-radius: 8px;
+	@include tablet {
+		font-size: 18px;
+		padding: 5px 20px;
+	}
+	@include phone {
+		font-size: 16px;
+		padding: 5px 20px;
+	}
 }
 
 .banner__light-holder {

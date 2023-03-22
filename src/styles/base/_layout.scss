@@ -7,4 +7,16 @@
 	max-width: 1240px;
 	margin: 0 auto;
 	width: 100%;
+	@include tablet {
+		padding: 0 50px;
+	}
+}
+.wrap--small {
+	padding: 0 20px;
+	max-width: 940px;
+	margin: 0 auto;
+	width: 100%;
+	@include tablet {
+		padding: 0 50px;
+	}
 }
