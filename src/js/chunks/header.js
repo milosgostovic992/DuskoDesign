@@ -1,3 +1,4 @@
+import helpers from './helpers';
 const header = {
 	header: document.querySelector('header'),
 	hamburger: document.querySelector('.js-menu'),
@@ -14,8 +15,10 @@ const header = {
 			this.hamburger.classList.toggle(this.hamburgerActiveClass);
 			if (this.hamburger.classList.contains(this.hamburgerActiveClass)) {
 				this.nav.classList.add(this.navActiveClass);
+				helpers.scrollDisabled();
 			} else {
 				this.nav.classList.remove(this.navActiveClass);
+				helpers.scrollEnabled();
 			}
 		});
 	},

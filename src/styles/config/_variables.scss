@@ -6,16 +6,17 @@ $default-font: 'Poppins', sans-serif;
 
 $white: #ffffff;
 $black: #000000;
-$beige-light: #D6A369;
-$beige-dark:  #795C3C;
+$black-second: #100f0f;
+$beige-light: #d6a369;
+$beige-dark: #795c3c;
 
-$primary-dark: #2D2B2B;
-$primary-light: #FCF7F2;
+$primary-dark: #2d2b2b;
+$primary-light: #fcf7f2;
 $transparent: transparent;
 
-$gradient-dark-top: linear-gradient(180deg, #2D2B2B 40%, #BE8849 200%);
-$gradient-dark-bottom: linear-gradient(180deg, #BE8849 -110%, #2D2B2B 70%);
-$gradient-light-top: linear-gradient(180deg, #FFF8EF 30%, #BE8849 100%);
-$gradient-light-bottom: linear-gradient(180deg, #BE8849 0%, #FFF8EF 70%);
+$gradient-dark-top: linear-gradient(180deg, #2d2b2b 40%, #be8849 200%);
+$gradient-dark-bottom: linear-gradient(180deg, #be8849 -110%, #2d2b2b 70%);
+$gradient-light-top: linear-gradient(180deg, #fff8ef 30%, #be8849 100%);
+$gradient-light-bottom: linear-gradient(180deg, #be8849 0%, #fff8ef 70%);
 
 $transition-primary: 300ms ease-in-out;
