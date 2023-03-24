@@ -4,8 +4,10 @@
 		<meta charset="UTF-8" />
 		<!-- <link rel="icon" type="image/svg+xml" href="" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 		<title>Dusko Design</title>
 		<script type="module" src="./js/main.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	</head>
 	<body>
 		<header class="js-header">
@@ -62,7 +64,7 @@
 				<div class="wrap wrap--small">
 					<div class="about__row">
 						<div class="about__holder">
-							<h2 class="about__heading">O nama</h2>
+							<h2 class="about__heading title">O nama</h2>
 							<p class="about__text">Lorem ipsum dolor sit amet consectetur. Condimentum pretium in fermentum in imperdiet feugiat lacus et. Eget in orci ornare ut sed venenatis suspendisse. Vel orci id aliquam a nulla volutpat fermentum. Senectus nibh morbi libero leo et tristique proin vehicula elit. Lorem ipsum dolor sit amet consectetur. Condimentum pretium in fermentum in imperdiet feugiat lacus et. Eget in orci ornare ut sed venenatis suspendisse.</p>
 						</div>
 						<div class="about__img-holder">
@@ -71,10 +73,191 @@
 					</div>
 				</div>
 			</section>
-			<section class="products"></section>
+			<section class="products js-products">
+				<div class="wrap wrap--small">
+					<h2 class="products__title title">Proizvodi</h2>
+					<div class="products__container">
+						<div class="swiper products__swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper products__wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/3dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="products__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/4dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/5dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/6dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/7dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/11.png" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/8dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/9dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/10dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/4dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="assets/2dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination products__pagination"></div>
+
+							<!-- If we need navigation buttons -->
+							<div class="products__btn-holder">
+								<button type="button" class="swiper-button-prev products__btn products__btn--left"></button>
+								<button type="button" class="swiper-button-next products__btn products__btn--right"></button>
+							</div>
+						</div>
+					</div>
+					<div class="products__popup-overlay js-overlay"></div>
+					<div class="products__popup-holder js-popup-holder js-target">
+						<img src="" alt="" class="products__popup-image js-popup-image" />
+						<button type="button" class="products__popup-close js-close-popup">
+							<img class="products__close-icon" src="assets/close.png" alt="Close icon" />
+						</button>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
-			<div class="footer__container">
+			<div class="footer__container js-footer">
 				<div class="wrap wrap--small">
 					<div class="footer__top">
 						<div class="footer__img-holder">
