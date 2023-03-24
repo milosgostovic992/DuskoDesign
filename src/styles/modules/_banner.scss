@@ -6,6 +6,7 @@
 	position: relative;
 	padding: 100px 0;
 	overflow: hidden;
+	background-image: url('assets/banner.jpg');
 	@include phone {
 		min-height: auto;
 	}

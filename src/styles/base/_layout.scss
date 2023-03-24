@@ -20,7 +20,11 @@
 		padding: 0 50px;
 	}
 }
-
+html,
+body {
+	-webkit-scroll-behavior: smooth !important;
+	scroll-behavior: smooth !important;
+}
 .title {
 	color: $white;
 	font-weight: 300;

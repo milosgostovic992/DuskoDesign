@@ -1,23 +1,36 @@
 // ========================================
 // header
 // ========================================
-header {
+.header {
+	position: fixed;
 	background-color: $transparent;
-	position: absolute;
+	z-index: 10;
 	top: 0;
 	left: 0;
 	width: 100%;
+	transition: $transition-primary;
+	@include tablet-down {
+		position: absolute;
+	}
+}
+.header--active {
+	background: $gradient-dark-top;
+	padding: 0;
+	.header__img {
+		width: 70px;
+	}
 }
 .header__container {
-	height: 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 .header__logo {
-	display: block;
-	height: 100px;
 	z-index: 10;
+}
+.header__img {
+	width: 100px;
+	transition: $transition-primary;
 }
 .header__menu {
 	width: 40px;
