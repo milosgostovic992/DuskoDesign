@@ -20,3 +20,42 @@
 		padding: 0 50px;
 	}
 }
+
+.title {
+	color: $white;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 57px;
+	letter-spacing: 0em;
+	margin-bottom: 20px;
+	padding: 0 25px;
+	text-align: center;
+	position: relative;
+	width: fit-content;
+	&::after {
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 0;
+		background-color: $primary-light;
+		bottom: 0;
+		left: 50%;
+		transition: $transition-primary;
+		border-radius: 5px;
+	}
+	&:hover {
+		color: $primary-light;
+		&::after {
+			left: 0;
+			width: 100%;
+		}
+	}
+	@include tablet {
+		font-size: 40px;
+		line-height: 46px;
+	}
+	@include phone {
+		font-size: 32px;
+		line-height: 37px;
+	}
+}
