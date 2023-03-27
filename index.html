@@ -4,32 +4,327 @@
 		<meta charset="UTF-8" />
 		<!-- <link rel="icon" type="image/svg+xml" href="" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 		<title>Dusko Design</title>
 		
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script type="module" crossorigin src="/js/index.js"></script>
 		<link rel="stylesheet" href="/styles/index.css">
 	</head>
 	<body>
-		<header>
-
+		<header class="header js-header">
+			<div class="wrap">
+				<div class="header__container">
+					<a href="javascript:;" class="header__logo header__logo--light">
+						<img class="header__img" src="/styles/logo-white.png" alt="logo" />
+					</a>
+					<a href="javascript:;" class="header__logo header__logo--dark">
+						<img class="header__img" src="/styles/logo.png" alt="logo" />
+					</a>
+					<button class="header__menu js-menu">
+						<span class="header__icon"></span>
+						<span class="sr-only">Hamburger</span>
+					</button>
+					<nav class="nav js-nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="javascript:;" class="nav__btn js-link" data-nav-for="1">Početak</a>
+							</li>
+							<li class="nav__item">
+								<a href="javascript:;" class="nav__btn js-link" data-nav-for="2">O nama</a>
+							</li>
+							<li class="nav__item">
+								<a href="javascript:;" class="nav__btn js-link" data-nav-for="3">Proizvodi</a>
+							</li>
+							<li class="nav__item">
+								<a href="javascript:;" class="nav__btn js-link" data-nav-for="4">Kontakt</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</header>
-		<main>
-			<section class="banner">
-				<h1 class="aaa">aaaaaaaaaaa</h1>
-				<h2 class="bbb">sssssssssss</h2>
+		<main class="main js-main">
+			<section class="banner has-cover js-section" data-nav-id="1">
+				<div class="wrap banner__wrap">
+					<div class="banner__container">
+						<h1 class="banner__title">Dobrodošli u svet unikatnih lampi</h1>
+						<h3 class="banner__subheading">Duško Deisgn obične stvari pretvara u nešto neobično. Pretvara ih u umetnost.</h3>
+						<button class="banner__btn"><a class="banner__btn-link" href="#products">Pogledajte ponudu</a></button>
+					</div>
+				</div>
+				<div class="banner__light-holder">
+					<button class="banner__switch js-switch-btn">
+						<img class="banner__img-light" src="/styles/1.png" alt="Light" />
+					</button>
+					<span class="banner__arrow"></span>
+					<span class="banner__click">Click me</span>
+				</div>
 			</section>
-			<section class="video">
-	
+			<section class="video-section js-section js-video-section">
+				<div class="video-section__wrap">
+					<video class="video-section__holder" autoplay muted loop>
+						<source src="/styles/video.mp4" type="video/mp4" />
+					</video>
+				</div>
+				<!-- <div class="wrap">
+					<div class="video-section__container">
+						<iframe class="video-section__iframe" src="https://www.youtube.com/embed/6NdWrZ77YO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div> -->
 			</section>
-			<section class="about">
-	
+			<section class="about js-section js-about-section" data-nav-id="2">
+				<div class="wrap wrap--small">
+					<div class="about__row">
+						<div class="about__holder">
+							<h2 class="about__heading title">O nama</h2>
+							<p class="about__text">Lorem ipsum dolor sit amet consectetur. Condimentum pretium in fermentum in imperdiet feugiat lacus et. Eget in orci ornare ut sed venenatis suspendisse. Vel orci id aliquam a nulla volutpat fermentum. Senectus nibh morbi libero leo et tristique proin vehicula elit. Lorem ipsum dolor sit amet consectetur. Condimentum pretium in fermentum in imperdiet feugiat lacus et. Eget in orci ornare ut sed venenatis suspendisse.</p>
+						</div>
+						<div class="about__img-holder">
+							<img src="/styles/2dd.jpg" alt="" class="about__image" />
+						</div>
+					</div>
+				</div>
 			</section>
-			<section class="products">
-	
+			<section class="products js-products js-section js-products-section" id="products" data-nav-id="3">
+				<div class="wrap wrap--small">
+					<h2 class="products__title title">Proizvodi</h2>
+					<div class="products__container">
+						<div class="swiper products__swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper products__wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/3dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="products__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/4dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/5dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/6dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/7dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/11.png" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/8dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/9dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/10dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/4dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide products__slide js-slide">
+									<div class="products__item js-item">
+										<button type="button" class="products__button js-products-button">
+											<span class="sr-only">Product item</span>
+										</button>
+										<div class="products__img-holder">
+											<img src="/styles/2dd.jpg" alt="image" class="products__image js-img" />
+										</div>
+										<div class="produstc__info">
+											<h3 class="products__subheading"><span class="products__num js-number"></span>Theano</h3>
+											<span class="products__price">12.500,00 RSD</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination products__pagination"></div>
+
+							<!-- If we need navigation buttons -->
+							<div class="products__btn-holder">
+								<button type="button" class="swiper-button-prev products__btn products__btn--left"></button>
+								<button type="button" class="swiper-button-next products__btn products__btn--right"></button>
+							</div>
+						</div>
+					</div>
+					<div class="products__popup-overlay js-overlay"></div>
+					<div class="products__popup-holder js-popup-holder js-target">
+						<img src="" alt="" class="products__popup-image js-popup-image" />
+						<button type="button" class="products__popup-close js-close-popup">
+							<img class="products__close-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALcSURBVHgB7dzNahRBFAXgO/7EmIUudBkVjQ+gb6DgC0lQRNCdvoeKbyHEjQtRiAqJKImavIQ/GI+n6G5NQmYyXV3VdSd9Pri4MT23zlT6L11tJiIiIiIiIiIiIiIiMg0AJ1jHzTn2OMc6ZrOEDZ9h3Wd9ZP1i7bA+sO6wTpsToRfWXdZa3eNP1ifWPdZZ84wNLrE2MN571gUrLPRQf/njfGZdNY/Y2ALrKw63ybpohYTPrnuYpk83v4H/sKkHmF6RsFuE3Hho3rCpd2jnG+uy9QTV7mKjZY+r5gmqs4sdtNfLzEb7mdwIY/J1NsKGfiBO1pmNuJnc+G6JpPy21i3OJdYLZJjZ9TZfspYszpolkjLoJxbvCmslZdj1tlbqbcd6at5wYCdZr9BNkt1Ix91F4zVrzjxiY4uIO+js1ukAifgD3/4eFs0zpJlNUTO75GcXUWLAGFrIjT4HjqGG3OgjAAw95EbOIKCQ98oRCBTywVIGgxkMeWQ9QpqrtS/1v123cXM0Gm3bUZVoNs7MTC6qYNjDCblRIOzhhdzoMezhhtzoIWyF3MgYtkLeL0PYCnmchGG7C3m2njeT7qBdR37QwTA/6PQuP+iCJT/oEjw/6KZSfhjobVLd+D9qMPA/ZfUiRzBQ2HvlDAQKu9JHENBTSnokLLsSA8fQwi45YAwlbOhB9PzY2DzrDbrxtLRilbVg3qBawF485F39pAh72bxB9TaDWFkWdqL7biR2SV8ebOgU6zfieF7QGcbkZ2UWqndf/EF7vRzhO4QdxjRvnrChbbSTZXcxob+Y3ciWJZLycYPnLf5vGMCtPm9T1p91g7XZ4seemTf89s9POat7nckH9DntzA5jOWcesbHrmBx2OM8ufiGA6sLq7YQ+t1jXzDNUM/tx3WwQjtzhBVG34ejAguoCa5m1jv9nTKHnR25n8jj1YHwuXN8F1evYfJ1diIiIiIiIiIiIiIiIX38BKXvwd6fQXaoAAAAASUVORK5CYII=" alt="Close icon" />
+						</button>
+					</div>
+				</div>
 			</section>
 		</main>
-		<footer>
-
+		<footer class="footer js-footer js-section" data-nav-id="4">
+			<div class="footer__container">
+				<div class="wrap wrap--small">
+					<div class="footer__top">
+						<div class="footer__img-holder">
+							<img src="/styles/11.png" alt="Lamp" class="footer__image js-footer-img" />
+						</div>
+						<div class="footer__info">
+							<div class="footer__contact">
+								<div class="footer__row">
+									<h3 class="footer__subheading">Kontakt</h3>
+									<div class="footer__icons">
+										<a href="https://www.instagram.com/dusko_design/" class="footer__icon">
+											<img class="footer__icon-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKPSURBVHgB7Zg9aFRBEMfnnVFJwM+gd4qNaOEHplDRWhsFCy00Woic4jU2SiSllYWFiFpYqSDYRC0Eg4KNWNiIYqN23oEW5vwgasBcQj4m/2En8PJ4uZu92xcSyB9+7L63s7tzc7uzt0e0qAWmyGLEzB0o9oMCWE5+qoEB8C6Koho1KzgRgZ3gEfjHres/eAy6ZGzyFTp1g28cXhVwzscRicxZMMnZaQKcYEuk2IW0wtlLor/D4tATDq83oBd8Trzva+RMO7vFF1pHdfyLifd/ZM64D20Jn/aBDrJrEpTBL31eC7amjFvCxJIuuhPvV5NLJ69TR0enk2zXc7UvgKVgGdgEjoF+j3FO0WxCY9EwwCAbti1setS2kYrxfm3kr6vggU66AUUJ7NaxPoJbyMg/UN4GQ+AuNStDhJ7FbE+DaorNkLTF7F6wR4RyZNc4uK+T5FHcAfkUuxXgOmwK+vyQ3OI3ycehL+C91i+BlXVsxZmS1l+BCmXg0CD4qfVdBvs9Kf2COhTXmMFmiZZeJ7uPQ+vIJT7RB4P9Jy3Xx/oFdWgLOKB12coDdWxlu9/U+l5y2Tu4Q2J7RirIM1UUvTpxUtJ2ATbT60YWdzP5zpypz4Oc2ufBNXZHxVNwRVOCtOXAZcN4xVYdkuOgx/DhShzg6BilxloDbmCggyjvkctN8vUw6CS3zuSrPUw21eo5VCW7joBD5H5+/Ca3xmRHbSa/tfk9/jAjR7C77ojBKpobDYNObICR6RczPgkaxOAlzZ36486kClHaDr5y9iqDLrKI3RUl62uQ7Gj7scLublbm8JLoH6dmxO6OJlfpEDeRv6APbOM6kbH+2SBXFTmTNoJ28pPkNjn33rb0Z8Oi5qumACokPF4IMhdvAAAAAElFTkSuQmCC" alt="instagram icon" />
+										</a>
+										<a href="https://www.facebook.com/duskodesign/" class="footer__icon">
+											<img class="footer__icon-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGISURBVHgB7Zc9SwMxGMefVBFB8GXQQRDBQeygtt8gH8Cv4Oqgg5uboJsfQvCDOLkKQqEgjrr5Al7buTT9h0vhmkt7SZMUCvnBj0vT3JPnksvdhSiR8IOZKoUQsv4I7kxq44GAGWwzxkR1ayQDL+A/HIjwyJg/qo/qi0WjU3VCbDJY1/uvGXLahNsUnw3Kb4kxTAkxCn/fkG0/yxSHAXyFX7APV2ETHpArmFcu/HiGTUPcK0NbrrcLPUI9eI7l/E0zUqOwPPokIwk9Qm+jAqZjBYdLeAaX4L5NgNAJ/RbKJ/CO8uVtTegp6xfKa3CdHPEdoQ5sab9HdOFL4fcuPCRXHJf9k0PcB5tlH3rKplG3aTTPhPZsGvneQ1ybtns8hz5lAfUNHK4L/1mNUAnh9+rgjnG43v88p8yKlFAVKaEqFiIhoYyNsR9TQn+UvxhjIz9VMr2ylBCetO843KgTYoyUjCm/Cm5hu9S/8Yx8R3kMt8htS9TCBXVUDLm/a0xISF7sh9VWOpFwZAhHBh9XKwQYMAAAAABJRU5ErkJggg==" alt="facebook icon" />
+										</a>
+										<a href="javascript:;" class="footer__icon">
+											<img class="footer__icon-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIASURBVHgB7Zc9SxxRFIbPbIyYhBCTIoSEkJAEJARCukCCmBRaqoW1lVb2YmMnqL2VvaCF4A8QrOwEEQQLLVRERVBXRQW/rs9x5rqDrKsz9+5ssw88zN2vmZfdnZnzilSp4kYgCTHG1LB5hW/wBT7DmujlSzzFY8zjfhAE55KAoMSBn7B5jz/wE37DD/gxClN/J5DBiyjQCe5FoTYjl3EFF3GLoEYeA0GacBzzpnwc4Rj+eyjMXzww2bGNjfeFacBlkz2r+NnmyMUy/cevkj36/2y3D+KBfkmKs84T3+0iHqhOKketXeQkPfO4IZ5xCTSCrTiNV+IJl0BXXNz0W2rB3zgr4YWxYoFu0CsuzrFswx7cFwecA1kItYujLL/gAO5ICrwFshAqj/0sO3BSEuI90B1qE77/dmzwBreBd2y6sBdfSkK8BSKIjiPd2CfheJIK50AE0duNnvbD+Md1ny4fzhHmJ9shbBZP37bLTjpxEN+KR1wCNUkZiJ/2Z1I5Tu0iHmhJKoMO+wv2QTzQFK5L9mgbmSn6ig7c0eCdFVooGkvGNWEN0opyaMqHBpkwRWpQqaKoP6feBrQo6vDfIGFR1Of0Svwan0tYFJ9G+9KWaouijiFaFvVvoEVRS+KaFIriZbHjpqnSesOsl0JzrYsC2eZ6IoXmesCBnYe2KlWScA0IjaG78AsdSwAAAABJRU5ErkJggg==" alt="youtube icon" />
+										</a>
+										<a href="mailto: gostovicd@yahoo.com" class="footer__icon">
+											<img class="footer__icon-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIYSURBVHgB7ZbLK0RhGMbPyCxQFFm4l2IlO5Yu5bIUCUlNWWqSS2xsLCykNGJvZ08zKKMUyZ+gbGThEqUQuc7rec03zTvfnDMXc9nMeerXOfN977zfc57zndMxDFu2bOWYHKETIuLzAeA2sqstsOlwOAKGMFMeMgXWwTtlXrzGkgqC1y6ShtZAlTovAHOUeS3zWmrNSrAhDR2BK9ApxubBE6Vfz2BCrNMBztmDboh1CZrVWD4YA9+UPnEvN/dWazSBOzVnaojFqYyIuVFwQ6nrFgyIvsPgWsxbGmI9gB6x0XvBK/1fb6Cfwhu4C7xoNTENsfgpmBVN2il4r5PVBWgTa82Q+d6Ma4jFqYwLUy3gnhIXJ92q/psHXODTojYhQyzeiB7gVLWN4JTi64zCDwibWQUfMeoTNhQy5RL1DRS8FVbiuTpRPwR+KLYSNhQAe6DQEMLvMrBtUr8jzahaftkeqF4pG/KDWtF4ksJv2ApwImqPQYmaKwVTorYG+CgFQ6FkZEO/muM9VKHGnaANdIvaYmHUp12QVVJxDR1qjXxaIy+oNDRhrJ6ib6VfuzBvMoZ40V2LZHQ9gkXQBwbBihozU7ykLA3pyXgp9mZMRtzbKqkoQxFPE47V6irSLU7fLKkoQ5lMRpdZUhGG+NunUBRkIhldnFSNCGBBGnJmKRldMqm/o/zI54Fp0G1kV/vAg4/8L8OWLVu5qF+UTUOWabxJPAAAAABJRU5ErkJggg==" alt="letter icon" />
+										</a>
+									</div>
+								</div>
+								<div class="footer__row">
+									<h3 class="footer__subheading">Telefon</h3>
+									<a class="footer__link" href="tel:+38163495114">+38163495114</a>
+								</div>
+								<div class="footer__row">
+									<h3 class="footer__subheading">Adresa</h3>
+									<span class="footer__adress">Olge Petrov 16, <br />21400 Bačka Palanka</span>
+								</div>
+								<div class="footer__row">
+									<h3 class="footer__subheading">Email</h3>
+									<a class="footer__link" href="mailto: gostovicd@yahoo.com">gostovicd@yahoo.com</a>
+								</div>
+							</div>
+							<div class="footer__logo-holder">
+								<a class="footer__logo-link footer__logo-link--light" href="javascript:;">
+									<img class="footer__logo" src="/styles/logo-white.png" alt="logo" />
+								</a>
+								<a class="footer__logo-link footer__logo-link--dark" href="javascript:;">
+									<img class="footer__logo" src="/styles/logo.png" alt="logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="wrap wrap--small footer__wrap">
+						<span class="footer__span">© Duško Design 2023</span>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
