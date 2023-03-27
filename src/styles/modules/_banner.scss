@@ -6,7 +6,7 @@
 	position: relative;
 	padding: 100px 0;
 	overflow: hidden;
-	background-image: url('assets/banner.jpg');
+	background-image: url('../assets/banner.jpg');
 	transition: $transition-primary;
 	@include phone {
 		min-height: auto;
