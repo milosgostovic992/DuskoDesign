@@ -13,8 +13,11 @@
 		<header class="header js-header">
 			<div class="wrap">
 				<div class="header__container">
-					<a href="javascript:;" class="header__logo">
+					<a href="javascript:;" class="header__logo header__logo--light">
 						<img class="header__img" src="assets/logo-white.png" alt="logo" />
+					</a>
+					<a href="javascript:;" class="header__logo header__logo--dark">
+						<img class="header__img" src="assets/logo.png" alt="logo" />
 					</a>
 					<button class="header__menu js-menu">
 						<span class="header__icon"></span>
@@ -39,31 +42,31 @@
 				</div>
 			</div>
 		</header>
-		<main>
+		<main class="main js-main">
 			<section class="banner has-cover js-section" data-nav-id="1">
 				<div class="wrap banner__wrap">
 					<div class="banner__container">
 						<h1 class="banner__title">Dobrodošli u svet unikatnih lampi</h1>
 						<h3 class="banner__subheading">Duško Deisgn obične stvari pretvara u nešto neobično. Pretvara ih u umetnost.</h3>
-						<button><a class="banner__btn" href="#products">Pogledajte ponudu</a></button>
+						<button class="banner__btn"><a class="banner__btn-link" href="#products">Pogledajte ponudu</a></button>
 					</div>
 				</div>
 				<div class="banner__light-holder">
-					<button class="banner__switch">
+					<button class="banner__switch js-switch-btn">
 						<img class="banner__img-light" src="assets/1.png" alt="Light" />
 					</button>
 					<span class="banner__arrow"></span>
 					<span class="banner__click">Click me</span>
 				</div>
 			</section>
-			<section class="video-section js-section">
+			<section class="video-section js-section js-video-section">
 				<div class="wrap">
 					<div class="video-section__container">
 						<iframe class="video-section__iframe" src="https://www.youtube.com/embed/6NdWrZ77YO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
 				</div>
 			</section>
-			<section class="about js-section" data-nav-id="2">
+			<section class="about js-section js-about-section" data-nav-id="2">
 				<div class="wrap wrap--small">
 					<div class="about__row">
 						<div class="about__holder">
@@ -76,7 +79,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="products js-products js-section" id="products" data-nav-id="3">
+			<section class="products js-products js-section js-products-section" id="products" data-nav-id="3">
 				<div class="wrap wrap--small">
 					<h2 class="products__title title">Proizvodi</h2>
 					<div class="products__container">
@@ -264,7 +267,7 @@
 				<div class="wrap wrap--small">
 					<div class="footer__top">
 						<div class="footer__img-holder">
-							<img src="assets/11.png" alt="Lamp" class="footer__image" />
+							<img src="assets/11.png" alt="Lamp" class="footer__image js-footer-img" />
 						</div>
 						<div class="footer__info">
 							<div class="footer__contact">
@@ -299,8 +302,11 @@
 								</div>
 							</div>
 							<div class="footer__logo-holder">
-								<a class="footer__logo-link" href="javascript:;">
+								<a class="footer__logo-link footer__logo-link--light" href="javascript:;">
 									<img class="footer__logo" src="assets/logo-white.png" alt="logo" />
+								</a>
+								<a class="footer__logo-link footer__logo-link--dark" href="javascript:;">
+									<img class="footer__logo" src="assets/logo.png" alt="logo" />
 								</a>
 							</div>
 						</div>

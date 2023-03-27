@@ -1,8 +1,9 @@
 .video-section {
 	min-height: 720px;
 	background: $primary-dark;
-	padding: 164px 0;
-	@include desktop {
+	padding: 100px 0;
+	transition: $transition-primary;
+	@include tablet {
 		padding: 80px 0;
 		min-height: 418px;
 	}
