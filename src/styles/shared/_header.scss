@@ -13,6 +13,27 @@
 		position: absolute;
 	}
 }
+.header--light {
+	&.header--active {
+		background: linear-gradient(180deg, #fff8ef 0%, #be8849 120%);
+	}
+	.nav__btn {
+		color: $primary-dark;
+	}
+	.header__icon {
+		background-color: $primary-dark;
+		&::before,
+		&::after {
+			background-color: $primary-dark;
+		}
+	}
+	.header__logo--dark {
+		display: block;
+	}
+	.header__logo--light {
+		display: none;
+	}
+}
 .header--active {
 	background: $gradient-dark-top;
 	padding: 0;
@@ -31,6 +52,10 @@
 .header__img {
 	width: 100px;
 	transition: $transition-primary;
+}
+
+.header__logo--dark {
+	display: none;
 }
 .header__menu {
 	width: 40px;
