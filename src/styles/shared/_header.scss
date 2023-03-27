@@ -17,6 +17,11 @@
 	&.header--active {
 		background: linear-gradient(180deg, #fff8ef 0%, #be8849 120%);
 	}
+	.nav {
+		@include tablet-down {
+			background-color: $primary-light;
+		}
+	}
 	.nav__btn {
 		color: $primary-dark;
 	}
