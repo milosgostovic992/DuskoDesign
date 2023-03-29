@@ -47,7 +47,7 @@ body {
 		transition: $transition-primary;
 		border-radius: 5px;
 	}
-	&:hover {
+	@include hover {
 		color: $primary-light;
 		&::after {
 			left: 0;
@@ -73,9 +73,11 @@ body {
 	}
 	.banner__btn {
 		background-color: $beige-light;
-	}
-	.banner__btn-link {
 		color: $primary-dark;
+		@include hover {
+			background-color: $beige-dark;
+			color: $primary-light;
+		}
 	}
 	.banner__switch {
 		filter: invert(1) saturate(0) drop-shadow(2px 4px 6px black);
@@ -111,7 +113,7 @@ body {
 			background-color: $beige-light;
 			color: $primary-dark;
 			filter: drop-shadow(0px 4px 4px rgba($primary-dark, 0.45));
-			&:hover {
+			@include hover {
 				filter: drop-shadow(0px 7px 7px rgba($primary-dark, 0.65));
 			}
 		}

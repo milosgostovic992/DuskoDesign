@@ -27,7 +27,7 @@
 	color: $white;
 	transition: $transition-primary;
 	filter: drop-shadow(0px 4px 4px rgba($beige-light, 0.45));
-	&:hover {
+	@include hover {
 		filter: drop-shadow(0px 7px 7px rgba($beige-light, 0.65));
 	}
 }

@@ -61,6 +61,12 @@
 	padding: 8px 30px;
 	background-color: $beige-dark;
 	border-radius: 8px;
+	color: $white;
+	transition: $transition-primary;
+	@include hover {
+		background-color: $beige-light;
+		color: $primary-dark;
+	}
 	@include tablet {
 		font-size: 18px;
 		padding: 5px 20px;
@@ -69,9 +75,6 @@
 		font-size: 16px;
 		padding: 5px 20px;
 	}
-}
-.banner__btn-link {
-	color: $white;
 }
 
 .banner__light-holder {

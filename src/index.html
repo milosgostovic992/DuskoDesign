@@ -5,9 +5,8 @@
 		<!-- <link rel="icon" type="image/svg+xml" href="" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-		<link rel="icon" type="image/x-icon" href="./assets/logo.ico">
+		<link rel="icon" type="image/x-icon" href="./assets/logo.ico" />
 		<title>Dusko Design</title>
-		<script type="module" src="./js/main.js" defer></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	</head>
 	<body>
@@ -49,7 +48,7 @@
 					<div class="banner__container">
 						<h1 class="banner__title">Dobro došli u svet unikatnih lampi</h1>
 						<h3 class="banner__subheading">Duško Design obične stvari pretvara u nešto neobično. Pretvara ih u umetnost.</h3>
-						<button class="banner__btn"><a class="banner__btn-link" href="#products">Pogledajte ponudu</a></button>
+						<button class="banner__btn js-banner-btn" data-nav-for="3">Pogledajte ponudu</button>
 					</div>
 				</div>
 				<div class="banner__light-holder">
@@ -61,6 +60,7 @@
 				</div>
 			</section>
 			<section class="video-section js-section js-video-section">
+				<h2 class="sr-only">Video section</h2>
 				<div class="video-section__wrap">
 					<video class="video-section__holder" autoplay muted loop>
 						<source src="assets/video.mp4" type="video/mp4" />
@@ -260,7 +260,7 @@
 					</div>
 					<div class="products__popup-overlay js-overlay"></div>
 					<div class="products__popup-holder js-popup-holder js-target">
-						<img src="" alt="" class="products__popup-image js-popup-image" />
+						<img src="assets/2dd.jpg" alt="" class="products__popup-image js-popup-image" />
 						<button type="button" class="products__popup-close js-close-popup">
 							<img class="products__close-icon" src="assets/close.png" alt="Close icon" />
 						</button>
@@ -289,7 +289,7 @@
 										<a href="javascript:;" class="footer__icon">
 											<img class="footer__icon-img" src="assets/YouTube.png" alt="youtube icon" />
 										</a>
-										<a href="mailto: gostovicd@yahoo.com" class="footer__icon">
+										<a href="mailto:gostovicd@yahoo.com" class="footer__icon">
 											<img class="footer__icon-img" src="assets/letter.png" alt="letter icon" />
 										</a>
 									</div>
@@ -304,7 +304,7 @@
 								</div>
 								<div class="footer__row">
 									<h3 class="footer__subheading">Email</h3>
-									<a class="footer__link" href="mailto: gostovicd@yahoo.com">gostovicd@yahoo.com</a>
+									<a class="footer__link" href="mailto:gostovicd@yahoo.com">gostovicd@yahoo.com</a>
 								</div>
 							</div>
 							<div class="footer__logo-holder">
@@ -325,5 +325,6 @@
 				</div>
 			</div>
 		</footer>
+		<script type="module" src="./js/main.js"></script>
 	</body>
 </html>
