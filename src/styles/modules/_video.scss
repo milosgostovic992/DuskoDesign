@@ -2,14 +2,14 @@
 	position: relative;
 	min-height: 720px;
 	background: $primary-dark;
-	padding: 100px;
+	// padding: 100px;
 	transition: $transition-primary;
 	@include tablet {
-		padding: 80px 0;
+		// padding: 80px 0;
 		min-height: 418px;
 	}
 	@include phone {
-		padding: 20px 0;
+		// padding: 20px 0;
 		min-height: 198px;
 	}
 }
