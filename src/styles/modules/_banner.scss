@@ -100,6 +100,14 @@
 		animation: glow 2s infinite;
 	}
 }
+.banner__img-dark {
+	display: none;
+	width: 100%;
+	height: 100%;
+	@include animation {
+		animation: glow 2s infinite;
+	}
+}
 
 .banner__arrow {
 	display: block;

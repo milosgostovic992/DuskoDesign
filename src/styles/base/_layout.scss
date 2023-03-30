@@ -80,7 +80,13 @@ body {
 		}
 	}
 	.banner__switch {
-		filter: invert(1) saturate(0) drop-shadow(2px 4px 6px black);
+		.banner__img-light {
+			display: none;
+		}
+		.banner__img-dark {
+			display: block;
+		}
+
 	}
 	.banner__arrow {
 		background-color: $primary-dark;
